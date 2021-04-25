@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
         } else {
             _instance = this;
         }
+        
+        _instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
